@@ -1,1 +1,1 @@
-<h1 align='center'>ChatGPT Search App Frontend</h1>
+<h1 align='center'>Component Finder Frontend</h1>
