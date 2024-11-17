@@ -48,6 +48,11 @@ export const ChatComponent = (props) => {
         }
     }, [allMessages.length]);
 
+    useEffect(() => {
+        if(!isLoading){
+            document.querySelector("#inputField").focus()
+        }
+    }, [isLoading])
 
     useEffect(() => {
         console.log("TU SOOOOM")
@@ -153,6 +158,7 @@ export const ChatComponent = (props) => {
                                 value={input}
                                 onChange={handleInputChange}
                                 disabled={isLoading}
+                                id="inputField"
                             />
                         </Grid>
                         <Grid item xs={2}>
