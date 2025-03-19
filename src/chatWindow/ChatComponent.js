@@ -124,7 +124,6 @@ export const ChatComponent = (props) => {
         setInput(event.target.value);
     };
 
-
     return (
         <ThemeProvider theme={theme}>
             <Box
