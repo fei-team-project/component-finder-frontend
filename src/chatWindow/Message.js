@@ -23,6 +23,7 @@ export const Message = ({message}) => {
                     flexDirection: isBot ? "row" : "row-reverse",
                     alignItems: "center",
                     overflowWrap: "break-word",
+                    width: "100%"
                 }}
             >
                 <Avatar sx={{ bgcolor: isBot ? "#DC8037" : "#374C53" }}>
@@ -39,6 +40,7 @@ export const Message = ({message}) => {
                         borderRadius: isBot
                             ? "20px 20px 20px 5px"
                             : "20px 20px 5px 20px",
+                        maxWidth: "calc(100% - 80px)"
                     }}
                 >
                     {urlRegex.test(message.text) ? (
